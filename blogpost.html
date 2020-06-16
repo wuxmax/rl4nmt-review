@@ -1,0 +1,1299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0077)file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/blogpost.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="generator" content="Zettlr">
+  <meta name="date" content="">
+  <title></title>
+  <style type="text/css">
+  * {
+    box-sizing: border-box;
+  }
+
+  a {
+    color: #FF7C3B;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  hr {
+    border: none;
+    border-bottom: 1px solid #999;
+    width: 80%;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: white;
+    color: #333;
+    font-family: 'DejaVu', 'Georgia', 'Times New Roman', 'Times', serif;
+  }
+
+  article {
+    width: 50%;
+    font-size: 1.5em;
+    margin: 0 auto;
+    line-height: 150%;
+  }
+
+  /* Better display on printing */
+  @media print {
+    article {
+      width: 90%;
+      font-size: 12pt;
+      margin: 0 auto;
+      line-height: 150%;
+    }
+  }
+
+  article p {
+    hyphens: auto;
+    text-align: justify;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', 'Lato', 'Liberation sans', 'Helvetica', sans-serif;
+    color: #FF7C3B;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  blockquote {
+    font-size: 80%;
+    color: rgba(120, 120, 120, 1);
+    margin: 2% 5%;
+    line-height: 120%;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 70%;
+    font-family: 'Raleway', 'Lato', 'Liberation sans', 'Helvetica', sans-serif;
+  }
+
+  th, td {
+    padding: 4px 20px;
+    border-bottom: 1px solid #333;
+  }
+
+  /* List of classes taken from the skylighting lib */
+  /* See: https://github.com/jgm/skylighting/blob/master/skylighting-core/src/Skylighting/Format/HTML.hs */
+
+  /* Colors: Solarized theme (light) */
+  /* See: https://ethanschoonover.com/solarized/ */
+
+  /* Specific implementation: Taken from the GEdit theme (light) */
+  /* See: https://github.com/altercation/solarized/blob/master/gedit/solarized-light.xml */
+
+  /* Generic styles */
+  pre.sourceCode {
+    color: #657b83;
+    background-color: #fdf6e3;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .05);
+    padding: 2px;
+    overflow: auto;
+  }
+
+  /* All classes, taken from skylighting lib */
+  .sourceCode .kw { color: #859900; font-weight: bold; } /* Keyword */
+  .sourceCode .dt { color: #b58900; } /* Datatype */
+  .sourceCode .df { color: #d33682; } /* Decimal values*/
+  .sourceCode .bn { color: #d33682; } /* base-n-integers */
+  .sourceCode .fl { color: #d33682; } /* Floats */
+  .sourceCode .ch { color: #2aa198; } /* Character */
+  .sourceCode .st { color: #2aa198; } /* String */
+  .sourceCode .vs { color: #2aa198; } /* Verbatim String */
+  .sourceCode .ss { color: #2aa198; } /* Special String */
+  .sourceCode .co { color: #586e75; font-style: italic; } /* Comment */
+  .sourceCode .ot { font-weight: bold; } /* Other token */
+  .sourceCode .al { color: #d33682; background-color: #073642; } /* Alert */
+  .sourceCode .fu { color: #268bd2; } /* Function name */
+  .sourceCode .re {} /* Region marker */
+  .sourceCode .er { color: #dc322f; font-weight: bold; } /* Error */
+  .sourceCode .cn { color: #2aa198; } /* Constant */
+  .sourceCode .sc { color: #dc322f; } /* Special character */
+  .sourceCode .im { color: #6c71c4; font-weight: bold; } /* Import statement */
+  .sourceCode .do { color: #dc322f; } /* Documentation string */
+  .sourceCode .an { color: #2aa198; } /* Annotation */
+  .sourceCode .cv { color: #6c71c4; } /* Comment var */
+  .sourceCode .va { color: #268bd2; } /* Variable */
+  .sourceCode .cf { color: #859900; } /* Control Flow (if, else, return) */
+  .sourceCode .op {} /* Operator */
+  .sourceCode .bu { color: #b58900; } /* Builtin function/class/identifier */
+  .sourceCode .ex { color: #268bd2; } /* Extension */
+  .sourceCode .pp { color: #cb4b16; } /* Preprocessor, like #import in C++ */
+  .sourceCode .at { color: #dc322f; } /* Attribute */
+  .sourceCode .in { color: #586e75; } /* Information */
+  .sourceCode .wa { color: #cb4b16; } /* Warning */
+  </style>
+
+<!-- Pandoc variables -->
+
+<!-- Additional CSS in case the user has passed it -->
+
+<!-- Include MathJax CDN, if applicable -->
+  <script src="./blogpost_files/tex-mml-chtml.js" type="text/javascript"></script><style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style><style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6px     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover {  color:white!important;  border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span {  background-color:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus {  outline:none}
+</style><style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenu_MenuArrow {color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL {left:.5em; right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;  font-family: null}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL { right:.7em; left:auto }
+.CtxtMenu_MenuRadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {  right: .7em; left:auto}
+.CtxtMenu_MenuInputBox {  padding-left: 1em; right:.5em; color:#666666;  font-family: null;}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL {  left: .1em;}
+.CtxtMenu_MenuComboBox {  left:.1em; padding-bottom:.5em;}
+.CtxtMenu_MenuLabel {  padding: 1px 2em 3px 1.33em;  font-style:italic}
+.CtxtMenu_MenuRule {  border-top: 1px solid #DDDDDD;  margin: 4px 3px;}
+.CtxtMenu_MenuDisabled {  color:GrayText}
+.CtxtMenu_MenuActive {  background-color: #606872;  color: white;}
+.CtxtMenu_MenuDisabled:focus {  background-color: #E8E8E8}
+.CtxtMenu_MenuLabel:focus {  background-color: #E8E8E8}
+.CtxtMenu_ContextMenu:focus {  outline:none}
+.CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {  outline:none}
+.CtxtMenu_Menu .CtxtMenu_MenuClose {  top:-10px; left:-10px}
+</style>
+<style id="MJX-CHTML-styles">
+mjx-container[jax="CHTML"] {
+  line-height: 0;
+}
+
+mjx-container [space="1"] {
+  margin-left: .111em;
+}
+
+mjx-container [space="2"] {
+  margin-left: .167em;
+}
+
+mjx-container [space="3"] {
+  margin-left: .222em;
+}
+
+mjx-container [space="4"] {
+  margin-left: .278em;
+}
+
+mjx-container [space="5"] {
+  margin-left: .333em;
+}
+
+mjx-container [rspace="1"] {
+  margin-right: .111em;
+}
+
+mjx-container [rspace="2"] {
+  margin-right: .167em;
+}
+
+mjx-container [rspace="3"] {
+  margin-right: .222em;
+}
+
+mjx-container [rspace="4"] {
+  margin-right: .278em;
+}
+
+mjx-container [rspace="5"] {
+  margin-right: .333em;
+}
+
+mjx-container [size="s"] {
+  font-size: 70.7%;
+}
+
+mjx-container [size="ss"] {
+  font-size: 50%;
+}
+
+mjx-container [size="Tn"] {
+  font-size: 60%;
+}
+
+mjx-container [size="sm"] {
+  font-size: 85%;
+}
+
+mjx-container [size="lg"] {
+  font-size: 120%;
+}
+
+mjx-container [size="Lg"] {
+  font-size: 144%;
+}
+
+mjx-container [size="LG"] {
+  font-size: 173%;
+}
+
+mjx-container [size="hg"] {
+  font-size: 207%;
+}
+
+mjx-container [size="HG"] {
+  font-size: 249%;
+}
+
+mjx-container [width="full"] {
+  width: 100%;
+}
+
+mjx-box {
+  display: inline-block;
+}
+
+mjx-block {
+  display: block;
+}
+
+mjx-itable {
+  display: inline-table;
+}
+
+mjx-row {
+  display: table-row;
+}
+
+mjx-row > * {
+  display: table-cell;
+}
+
+mjx-mtext {
+  display: inline-block;
+}
+
+mjx-mstyle {
+  display: inline-block;
+}
+
+mjx-merror {
+  display: inline-block;
+  color: red;
+  background-color: yellow;
+}
+
+mjx-mphantom {
+  visibility: hidden;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-math {
+  display: inline-block;
+  text-align: left;
+  line-height: 0;
+  text-indent: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  font-size-adjust: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  word-spacing: normal;
+  white-space: nowrap;
+  direction: ltr;
+  padding: 1px 0;
+}
+
+mjx-container[jax="CHTML"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="CHTML"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="CHTML"][display="true"] mjx-math {
+  padding: 0;
+}
+
+mjx-container[jax="CHTML"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="CHTML"][justify="right"] {
+  text-align: right;
+}
+
+mjx-mi {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-mo {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-stretchy-h {
+  display: inline-table;
+  width: 100%;
+}
+
+mjx-stretchy-h > * {
+  display: table-cell;
+  width: 0;
+}
+
+mjx-stretchy-h > * > mjx-c {
+  display: inline-block;
+  transform: scalex(1.0000001);
+}
+
+mjx-stretchy-h > * > mjx-c::before {
+  display: inline-block;
+  padding: .001em 0;
+  width: initial;
+}
+
+mjx-stretchy-h > mjx-ext {
+  overflow: hidden;
+  width: 100%;
+}
+
+mjx-stretchy-h > mjx-ext > mjx-c::before {
+  transform: scalex(500);
+}
+
+mjx-stretchy-h > mjx-ext > mjx-c {
+  width: 0;
+}
+
+mjx-stretchy-h > mjx-beg > mjx-c {
+  margin-right: -.1em;
+}
+
+mjx-stretchy-h > mjx-end > mjx-c {
+  margin-left: -.1em;
+}
+
+mjx-stretchy-v {
+  display: inline-block;
+}
+
+mjx-stretchy-v > * {
+  display: block;
+}
+
+mjx-stretchy-v > mjx-beg {
+  height: 0;
+}
+
+mjx-stretchy-v > mjx-end > mjx-c {
+  display: block;
+}
+
+mjx-stretchy-v > * > mjx-c {
+  transform: scaley(1.0000001);
+  transform-origin: left center;
+  overflow: hidden;
+}
+
+mjx-stretchy-v > mjx-ext {
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+  border: 0px solid transparent;
+  overflow: hidden;
+}
+
+mjx-stretchy-v > mjx-ext > mjx-c::before {
+  width: initial;
+}
+
+mjx-stretchy-v > mjx-ext > mjx-c {
+  transform: scaleY(500) translateY(.1em);
+  overflow: visible;
+}
+
+mjx-mark {
+  display: inline-block;
+  height: 0px;
+}
+
+mjx-mn {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-msub {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-msup {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-msubsup {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-script {
+  display: inline-block;
+  padding-right: .05em;
+}
+
+mjx-script > * {
+  display: block;
+}
+
+mjx-munder {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-over {
+  text-align: left;
+}
+
+mjx-munder:not([limits="false"]) {
+  display: inline-table;
+}
+
+mjx-munder > mjx-row {
+  text-align: left;
+}
+
+mjx-under {
+  padding-bottom: .1em;
+}
+
+mjx-mover {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-mover:not([limits="false"]) {
+  padding-top: .1em;
+}
+
+mjx-mover:not([limits="false"]) > * {
+  display: block;
+  text-align: left;
+}
+
+mjx-munderover {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-munderover:not([limits="false"]) {
+  padding-top: .1em;
+}
+
+mjx-munderover:not([limits="false"]) > * {
+  display: block;
+}
+
+mjx-mmultiscripts {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-prescripts {
+  display: inline-table;
+  padding-left: .05em;
+}
+
+mjx-scripts {
+  display: inline-table;
+  padding-right: .05em;
+}
+
+mjx-prescripts > mjx-row > mjx-cell {
+  text-align: right;
+}
+
+mjx-TeXAtom {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-c {
+  display: inline-block;
+}
+
+mjx-utext {
+  display: inline-block;
+  padding: .75em 0 .2em 0;
+}
+
+mjx-c::before {
+  display: block;
+  width: 0;
+}
+
+.MJX-TEX {
+  font-family: MJXZERO, MJXTEX;
+}
+
+.TEX-B {
+  font-family: MJXZERO, MJXTEX-B;
+}
+
+.TEX-I {
+  font-family: MJXZERO, MJXTEX-I;
+}
+
+.TEX-MI {
+  font-family: MJXZERO, MJXTEX-MI;
+}
+
+.TEX-BI {
+  font-family: MJXZERO, MJXTEX-BI;
+}
+
+.TEX-S1 {
+  font-family: MJXZERO, MJXTEX-S1;
+}
+
+.TEX-S2 {
+  font-family: MJXZERO, MJXTEX-S2;
+}
+
+.TEX-S3 {
+  font-family: MJXZERO, MJXTEX-S3;
+}
+
+.TEX-S4 {
+  font-family: MJXZERO, MJXTEX-S4;
+}
+
+.TEX-A {
+  font-family: MJXZERO, MJXTEX-A;
+}
+
+.TEX-C {
+  font-family: MJXZERO, MJXTEX-C;
+}
+
+.TEX-CB {
+  font-family: MJXZERO, MJXTEX-CB;
+}
+
+.TEX-FR {
+  font-family: MJXZERO, MJXTEX-FR;
+}
+
+.TEX-FRB {
+  font-family: MJXZERO, MJXTEX-FRB;
+}
+
+.TEX-SS {
+  font-family: MJXZERO, MJXTEX-SS;
+}
+
+.TEX-SSB {
+  font-family: MJXZERO, MJXTEX-SSB;
+}
+
+.TEX-SSI {
+  font-family: MJXZERO, MJXTEX-SSI;
+}
+
+.TEX-SC {
+  font-family: MJXZERO, MJXTEX-SC;
+}
+
+.TEX-T {
+  font-family: MJXZERO, MJXTEX-T;
+}
+
+.TEX-V {
+  font-family: MJXZERO, MJXTEX-V;
+}
+
+.TEX-VB {
+  font-family: MJXZERO, MJXTEX-VB;
+}
+
+mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
+  font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+}
+
+@font-face /* 0 */ {
+  font-family: MJXZERO;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+}
+
+@font-face /* 1 */ {
+  font-family: MJXTEX;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+}
+
+@font-face /* 2 */ {
+  font-family: MJXTEX-B;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+}
+
+@font-face /* 3 */ {
+  font-family: MJXTEX-I;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+}
+
+@font-face /* 4 */ {
+  font-family: MJXTEX-MI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+}
+
+@font-face /* 5 */ {
+  font-family: MJXTEX-BI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+}
+
+@font-face /* 6 */ {
+  font-family: MJXTEX-S1;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+}
+
+@font-face /* 7 */ {
+  font-family: MJXTEX-S2;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+}
+
+@font-face /* 8 */ {
+  font-family: MJXTEX-S3;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+}
+
+@font-face /* 9 */ {
+  font-family: MJXTEX-S4;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+}
+
+@font-face /* 10 */ {
+  font-family: MJXTEX-A;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+}
+
+@font-face /* 11 */ {
+  font-family: MJXTEX-C;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+}
+
+@font-face /* 12 */ {
+  font-family: MJXTEX-CB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+}
+
+@font-face /* 13 */ {
+  font-family: MJXTEX-FR;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+}
+
+@font-face /* 14 */ {
+  font-family: MJXTEX-FRB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+}
+
+@font-face /* 15 */ {
+  font-family: MJXTEX-SS;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+}
+
+@font-face /* 16 */ {
+  font-family: MJXTEX-SSB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+}
+
+@font-face /* 17 */ {
+  font-family: MJXTEX-SSI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+}
+
+@font-face /* 18 */ {
+  font-family: MJXTEX-SC;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+}
+
+@font-face /* 19 */ {
+  font-family: MJXTEX-T;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+}
+
+@font-face /* 20 */ {
+  font-family: MJXTEX-V;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+}
+
+@font-face /* 21 */ {
+  font-family: MJXTEX-VB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+}
+
+mjx-c.mjx-c28::before {
+  padding: 0.75em 0.389em 0.25em 0;
+  content: "(";
+}
+
+mjx-c.mjx-c29::before {
+  padding: 0.75em 0.389em 0.25em 0;
+  content: ")";
+}
+
+mjx-c.mjx-c2B::before {
+  padding: 0.583em 0.778em 0.082em 0;
+  content: "+";
+}
+
+mjx-c.mjx-c2C::before {
+  padding: 0.121em 0.278em 0.194em 0;
+  content: ",";
+}
+
+mjx-c.mjx-c2E::before {
+  padding: 0.12em 0.278em 0 0;
+  content: ".";
+}
+
+mjx-c.mjx-c30::before {
+  padding: 0.666em 0.5em 0.022em 0;
+  content: "0";
+}
+
+mjx-c.mjx-c31::before {
+  padding: 0.666em 0.5em 0 0;
+  content: "1";
+}
+
+mjx-c.mjx-c32::before {
+  padding: 0.666em 0.5em 0 0;
+  content: "2";
+}
+
+mjx-c.mjx-c33::before {
+  padding: 0.665em 0.5em 0.022em 0;
+  content: "3";
+}
+
+mjx-c.mjx-c34::before {
+  padding: 0.677em 0.5em 0 0;
+  content: "4";
+}
+
+mjx-c.mjx-c35::before {
+  padding: 0.666em 0.5em 0.022em 0;
+  content: "5";
+}
+
+mjx-c.mjx-c36::before {
+  padding: 0.666em 0.5em 0.022em 0;
+  content: "6";
+}
+
+mjx-c.mjx-c37::before {
+  padding: 0.676em 0.5em 0.022em 0;
+  content: "7";
+}
+
+mjx-c.mjx-c38::before {
+  padding: 0.666em 0.5em 0.022em 0;
+  content: "8";
+}
+
+mjx-c.mjx-c3C::before {
+  padding: 0.54em 0.778em 0.04em 0;
+  content: "<";
+}
+
+mjx-c.mjx-c3D::before {
+  padding: 0.583em 0.778em 0.082em 0;
+  content: "=";
+}
+
+mjx-c.mjx-c3E::before {
+  padding: 0.54em 0.778em 0.04em 0;
+  content: ">";
+}
+
+mjx-c.mjx-c5E::before {
+  padding: 0.694em 0.5em 0 0;
+  content: "^";
+}
+
+mjx-c.mjx-c67::before {
+  padding: 0.453em 0.5em 0.206em 0;
+  content: "g";
+}
+
+mjx-c.mjx-c6C::before {
+  padding: 0.694em 0.278em 0 0;
+  content: "l";
+}
+
+mjx-c.mjx-c6F::before {
+  padding: 0.448em 0.5em 0.01em 0;
+  content: "o";
+}
+
+mjx-c.mjx-c7B::before {
+  padding: 0.75em 0.5em 0.25em 0;
+  content: "{";
+}
+
+mjx-c.mjx-c7C::before {
+  padding: 0.75em 0.278em 0.249em 0;
+  content: "|";
+}
+
+mjx-c.mjx-c7D::before {
+  padding: 0.75em 0.5em 0.25em 0;
+  content: "}";
+}
+
+mjx-c.mjx-c2032::before {
+  padding: 0.56em 0.275em 0 0;
+  content: "\2032";
+}
+
+mjx-c.mjx-c2061::before {
+  padding: 0 0 0 0;
+  content: "";
+}
+
+mjx-c.mjx-c2208::before {
+  padding: 0.54em 0.667em 0.04em 0;
+  content: "\2208";
+}
+
+mjx-c.mjx-c2212::before {
+  padding: 0.583em 0.778em 0.082em 0;
+  content: "\2212";
+}
+
+mjx-c.mjx-c2217::before {
+  padding: 0.465em 0.5em 0 0;
+  content: "\2217";
+}
+
+mjx-c.mjx-c1D438.TEX-I::before {
+  padding: 0.68em 0.764em 0 0;
+  content: "E";
+}
+
+[noIC] mjx-c.mjx-c1D438.TEX-I:last-child::before {
+  padding-right: 0.738em;
+}
+
+mjx-c.mjx-c1D43F.TEX-I::before {
+  padding: 0.683em 0.681em 0 0;
+  content: "L";
+}
+
+mjx-c.mjx-c1D440.TEX-I::before {
+  padding: 0.683em 1.051em 0 0;
+  content: "M";
+}
+
+[noIC] mjx-c.mjx-c1D440.TEX-I:last-child::before {
+  padding-right: 0.97em;
+}
+
+mjx-c.mjx-c1D441.TEX-I::before {
+  padding: 0.683em 0.888em 0 0;
+  content: "N";
+}
+
+[noIC] mjx-c.mjx-c1D441.TEX-I:last-child::before {
+  padding-right: 0.803em;
+}
+
+mjx-c.mjx-c1D445.TEX-I::before {
+  padding: 0.683em 0.759em 0.021em 0;
+  content: "R";
+}
+
+mjx-c.mjx-c1D44C.TEX-I::before {
+  padding: 0.683em 0.763em 0 0;
+  content: "Y";
+}
+
+[noIC] mjx-c.mjx-c1D44C.TEX-I:last-child::before {
+  padding-right: 0.581em;
+}
+
+mjx-c.mjx-c1D44E.TEX-I::before {
+  padding: 0.441em 0.529em 0.01em 0;
+  content: "a";
+}
+
+mjx-c.mjx-c1D44F.TEX-I::before {
+  padding: 0.694em 0.429em 0.011em 0;
+  content: "b";
+}
+
+mjx-c.mjx-c1D450.TEX-I::before {
+  padding: 0.442em 0.433em 0.011em 0;
+  content: "c";
+}
+
+mjx-c.mjx-c1D451.TEX-I::before {
+  padding: 0.694em 0.52em 0.01em 0;
+  content: "d";
+}
+
+mjx-c.mjx-c1D452.TEX-I::before {
+  padding: 0.442em 0.466em 0.011em 0;
+  content: "e";
+}
+
+mjx-c.mjx-c1D456.TEX-I::before {
+  padding: 0.661em 0.345em 0.011em 0;
+  content: "i";
+}
+
+mjx-c.mjx-c1D459.TEX-I::before {
+  padding: 0.694em 0.298em 0.011em 0;
+  content: "l";
+}
+
+mjx-c.mjx-c1D45A.TEX-I::before {
+  padding: 0.442em 0.878em 0.011em 0;
+  content: "m";
+}
+
+mjx-c.mjx-c1D45B.TEX-I::before {
+  padding: 0.442em 0.6em 0.011em 0;
+  content: "n";
+}
+
+mjx-c.mjx-c1D45C.TEX-I::before {
+  padding: 0.441em 0.485em 0.011em 0;
+  content: "o";
+}
+
+mjx-c.mjx-c1D45D.TEX-I::before {
+  padding: 0.442em 0.503em 0.194em 0;
+  content: "p";
+}
+
+mjx-c.mjx-c1D45F.TEX-I::before {
+  padding: 0.442em 0.451em 0.011em 0;
+  content: "r";
+}
+
+mjx-c.mjx-c1D460.TEX-I::before {
+  padding: 0.442em 0.469em 0.01em 0;
+  content: "s";
+}
+
+mjx-c.mjx-c1D461.TEX-I::before {
+  padding: 0.626em 0.361em 0.011em 0;
+  content: "t";
+}
+
+mjx-c.mjx-c1D465.TEX-I::before {
+  padding: 0.442em 0.572em 0.011em 0;
+  content: "x";
+}
+
+mjx-c.mjx-c1D466.TEX-I::before {
+  padding: 0.442em 0.49em 0.205em 0;
+  content: "y";
+}
+
+mjx-c.mjx-c1D6FC.TEX-I::before {
+  padding: 0.442em 0.64em 0.011em 0;
+  content: "\3B1";
+}
+
+mjx-c.mjx-c1D703.TEX-I::before {
+  padding: 0.705em 0.469em 0.01em 0;
+  content: "\3B8";
+}
+
+mjx-c.mjx-c2211.TEX-S1::before {
+  padding: 0.75em 1.056em 0.25em 0;
+  content: "\2211";
+}
+</style></head>
+<body>
+  <!-- Render in article for reader view enabling -->
+    <article>
+    <h1 id="reinforcement-learning-for-neural-machine-translation">Reinforcement Learning for Neural Machine Translation</h1>
+    <p>A blog-post by Max Reinhard, 16th June 2020. Based on <span class="citation" data-cites="wu-etal-2018-study">Wu et al. (2018)</span></p>
+    <h2 id="tldr">TL;DR</h2>
+    <p>In the 2018 paper at hand Wu et al.&nbsp;evaluate how Reinforcement Learning (RL) methods can be leveraged to improve the performance of Neural Machine Translation (NMT). They examine the contribution of different strategies in RL training (and their combinations) to achieve higher BLEU scores based on a (then) state-of-the-art NMT model. By also leveraging large-scale monolingual data they manage to beat a proclaimed state-of-the-art.</p>
+    <h2 id="introduction">Introduction</h2>
+    <p>First I will give a brief explanation about what NMT is and what is up with the field’s standard evaluation metric BLEU. Then I will explained how the NMT problem is transferred to the world of RL. Following that I present you the different RL training strategies that have been investigated in this paper and try to make sense of them. A short walk-through of the experimental setup and sequence of experiments comes next while also displaying the observed results. Lastly I will tell you my opinion about the paper and what I think are open questions and therefore interesting future research directions. But before all of that I want to give a little bit of context of who the authors are.</p>
+    <h3 id="about-the-authors">About the authors</h3>
+    <p>The paper lists five authors which were (or still are) situated at <em>Microsoft Research Asia</em> and the <em>School of Data and Computer Science at Sun Yat-sen University</em> in China. Looking at their publication record it seems as some of them have been in active in NLP research for some time, but most activity stems from the last two years. The research of all of them has been focused on NMT since 2018 and part of the authors also have collaborated on other publications in that field.</p>
+    <h3 id="what-is-nmt">What is NMT?</h3>
+    <p>The term “Neural Machine Translation” ist used to describe the field of applying (deep) neural models for the task of translating a sequence of words from one natural language to another. There are other paradigms in machine translation like “Statistical Machine Translation” or rule-based approaches, which have been used in the past. In 2013 and 2014 the first papers were published presenting neural models which performed well for translation task. Then two years later it became of practical and public use as large tech companies started deploying neural models for their translation services.<a href="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/blogpost.html#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a><a href="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/blogpost.html#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+    <center>
+    <img src="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/images/encoder_decoder.png" width="700"><br>
+    <em>Figure taken from: <a href="https://link.springer.com/chapter/10.1007/978-3-030-31756-0_5">The Encoder-Decoder Framework and Its Applications</a></em>
+    </center>
+    <p>NMT models generally follow a sequence-2-sequence approach that is realised by encoder-decoder networks. So the input is a sequence of words which is encoded into a vector by the encoder. This vector is then passed as input to the decoder which predicts a sequence of output words which is the proposed translation of the input.</p>
+    <p>Typically the neural models that are used are RNNs with some form of attention mechanism. The best result - as with most NLP tasks today - are now achieved by leveraging transformer models.<a href="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/blogpost.html#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> Just recently the new GPT-3 model was used to achieve substantial improvements of the state-of-the art in a few-shot setting for English-French translation.<a href="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/blogpost.html#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+    <p>Independently of the specific architecture these NMT models are typically trained with Maximum-Likelihood-Estimation (MLE) resulting in the following loss function:</p>
+    <p><span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="0" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msub><mjx-mi class="mjx-i" noic="true"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D440 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D438 TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-munderover space="4" limits="false"><mjx-mo class="mjx-sop"><mjx-c class="mjx-c2211 TEX-S1"></mjx-c></mjx-mo><mjx-script style="vertical-align: -0.285em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-spacer style="margin-top: 0.291em;"></mjx-spacer><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-texatom></mjx-script></mjx-munderover><mjx-mi class="mjx-n" space="2"><mjx-c class="mjx-c6C"></mjx-c><mjx-c class="mjx-c6F"></mjx-c><mjx-c class="mjx-c67"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2061"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-i" noic="true"><mjx-c class="mjx-c1D45D TEX-I"></mjx-c></mjx-mi></mjx-texatom><mjx-script style="vertical-align: -0.229em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D703 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup><mjx-mo class="mjx-n"><mjx-c class="mjx-c7C"></mjx-c></mjx-mo><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-munderover space="4" limits="false"><mjx-mo class="mjx-sop"><mjx-c class="mjx-c2211 TEX-S1"></mjx-c></mjx-mo><mjx-script style="vertical-align: -0.285em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-spacer style="margin-top: 0.291em;"></mjx-spacer><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-texatom></mjx-script></mjx-munderover><mjx-munderover space="2" limits="false"><mjx-mo class="mjx-sop"><mjx-c class="mjx-c2211 TEX-S1"></mjx-c></mjx-mo><mjx-script style="vertical-align: -0.285em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-spacer style="margin-top: 0.284em;"></mjx-spacer><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-texatom></mjx-script></mjx-munderover><mjx-mi class="mjx-n" space="2"><mjx-c class="mjx-c6C"></mjx-c><mjx-c class="mjx-c6F"></mjx-c><mjx-c class="mjx-c67"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2061"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-i" noic="true"><mjx-c class="mjx-c1D45D TEX-I"></mjx-c></mjx-mi></mjx-texatom><mjx-script style="vertical-align: -0.229em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D703 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-msubsup><mjx-mi class="mjx-i" noic="true"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.267em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-spacer style="margin-top: 0.18em;"></mjx-spacer><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msubsup><mjx-mo class="mjx-n"><mjx-c class="mjx-c7C"></mjx-c></mjx-mo><mjx-msubsup><mjx-mi class="mjx-i" noic="true"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.296em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-spacer style="margin-top: 0.18em;"></mjx-spacer><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-script></mjx-msubsup><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msubsup space="2"><mjx-mi class="mjx-i" noic="true"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.296em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-spacer style="margin-top: 0.18em;"></mjx-spacer><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-texatom></mjx-script></mjx-msubsup><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msup space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>L</mi><mrow><mi>M</mi><mi>L</mi><mi>E</mi></mrow></msub><mo>=</mo><munderover><mo data-mjx-texclass="OP">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mi>log</mi><mo data-mjx-texclass="NONE">⁡</mo><msub><mrow><mi>p</mi></mrow><mi>θ</mi></msub><mo stretchy="false">(</mo><msup><mi>y</mi><mi>i</mi></msup><mo data-mjx-texclass="ORD" fence="false" stretchy="false">|</mo><msup><mi>x</mi><mi>i</mi></msup><mo stretchy="false">)</mo><mo>=</mo><munderover><mo data-mjx-texclass="OP">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><munderover><mo data-mjx-texclass="OP">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi>m</mi></munderover><mi>log</mi><mo data-mjx-texclass="NONE">⁡</mo><msub><mrow><mi>p</mi></mrow><mi>θ</mi></msub><mo stretchy="false">(</mo><msubsup><mi>y</mi><mi>t</mi><mi>i</mi></msubsup><mo data-mjx-texclass="ORD" fence="false" stretchy="false">|</mo><msubsup><mi>y</mi><mn>1</mn><mi>i</mi></msubsup><mo>,</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>,</mo><msubsup><mi>y</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow><mi>i</mi></msubsup><mo>,</mo><msup><mi>x</mi><mi>i</mi></msup><mo stretchy="false">)</mo></math></mjx-assistive-mml></mjx-container></span></p>
+    <p>Here <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="1" style="font-size: 108.7%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mo class="mjx-n"><mjx-c class="mjx-c7B"></mjx-c></mjx-mo><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msup space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup><mjx-msubsup><mjx-mo class="mjx-n" noic="true"><mjx-c class="mjx-c7D"></mjx-c></mjx-mo><mjx-script style="vertical-align: -0.288em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-spacer style="margin-top: 0.18em;"></mjx-spacer><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-texatom></mjx-script></mjx-msubsup></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo fence="false" stretchy="false">{</mo><msup><mi>x</mi><mi>i</mi></msup><mo>,</mo><msup><mi>y</mi><mi>i</mi></msup><msubsup><mo fence="false" stretchy="false">}</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></msubsup></math></mjx-assistive-mml></mjx-container></span> is the set of training examples, which consist of sentence pairs in two languages (parallel data). Thereby the model parameters <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="2" style="font-size: 108.7%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D703 TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>θ</mi></math></mjx-assistive-mml></mjx-container></span> are optimized to raise the probability, that the sentence <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="3" style="font-size: 108.7%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>y</mi><mi>i</mi></msup></math></mjx-assistive-mml></mjx-container></span> is generated as output when given the sentence <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="4" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>x</mi><mi>i</mi></msup></math></mjx-assistive-mml></mjx-container></span> as input.</p>
+    <p>The important point to note here that this is a token-level objective: “At each decoding step t of model training, the probability of generating a token <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="5" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msub><mjx-mi class="mjx-i" noic="true"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>y</mi><mi>t</mi></msub></math></mjx-assistive-mml></mjx-container></span> is maximized conditioned on <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="6" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math></mjx-assistive-mml></mjx-container></span> and <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="7" style="font-size: 108.7%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msub><mjx-mi class="mjx-i" noic="true"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c3C"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="3"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>y</mi><mrow><mo>&lt;</mo><mi>t</mi></mrow></msub><mo>=</mo><mo stretchy="false">(</mo><mi>y</mi><mn>1</mn><mo>,</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>,</mo><mi>y</mi><mi>t</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></math></mjx-assistive-mml></mjx-container></span>.” <span class="citation" data-cites="wu-etal-2018-study">Wu et al. (2018)</span>.</p>
+    <p>So to sum it up: This is classical supervised learning with parallel data.</p>
+    <h3 id="evaluation-metric-the-big-bad-bleu">Evaluation metric: The big (bad) BLEU</h3>
+    <p>Although it has been subject to a wide array of criticism<a href="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/blogpost.html#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a><a href="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/blogpost.html#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>, the BLEU metric is the standard evaluation metric for machine translation since it was introduced in 2002.<br>
+    Johann described how BLEU works in detail in his blog-post about sentence generation<a href="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/blogpost.html#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>, so I will just explain it briefly: The idea is to compare a candidate sentence to one or more reference sentences and score the candidate by counting how many n-grams of different lengths are shared with the reference(s).<br>
+    There are other metrics like ROUGE or METEOR which try to mitigate some of the problems of BLEU but I wont dive deeper into that. For today it is important to keep in that there are problems with BLEU.</p>
+    <p>Besides the mentioned criticism, using BLEU as an evaluation metric for NMT systems entails another problem: The “loss-evaluation mismatch”. While a token-level objective is used during MLE training, the evaluation takes place on a sequence-level (i.e.&nbsp;sentence-level). This results in an inconsistency between training objective and evaluation metric and addressing this issue is the motivation for applying RL to NMT in the paper at hand.</p>
+    <center>
+    <img src="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/images/mle_bleu.png" width="500"><br>
+    <em>I did not make this but I had to put it here.<br>
+    <a href="https://www.pinclipart.com/pindetail/JxxhTT_rl-in-nmt-clipart/">Taken from somewhere in the interwebs.</a></em>
+    </center>
+    <h2 id="rl-comes-into-play">RL comes into play</h2>
+    <p>This work is not the first one applying RL to NMT but according to the authors “effectively applying RL to real-world NMT systems has not been fulfilled by previous works.” To fill that gap, they pursued three major aspects:</p>
+    <ol type="1">
+    <li>Applying RL to state-of-the-art NMT models (which at this point in time meant NMT models based on the early Transformer models)</li>
+    <li>Investigating how to mitigate the “limitations” of RL learning by using the right “tricks” in the context of NMT</li>
+    <li>Using additional monolingual data for RL in NMT (which has been shown to be successful with MLE training)</li>
+    </ol>
+    <p>I will talk about the first two aspects in more detail but before that I am going to explain how to make a RL problem out of your translation problem - in a few easy steps.</p>
+    <h3 id="how-do-rl-and-nmt-fit-together">How do RL and NMT fit together?</h3>
+    <p>Transferring NMT into the RL world: The NMT model becomes the <em>agent</em> while and the <em>enviroment</em> at each decoding step is comprised on the previously decoded words <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="8" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msub><mjx-mi class="mjx-i" noic="true"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c3C"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>y</mi><mrow><mo>&lt;</mo><mi>t</mi></mrow></msub></math></mjx-assistive-mml></mjx-container></span> and the vector generated by the encoder component. A <em>reward</em> is given in form of the BLEU score by comparing the generated sentence with its respective ground truth. In this setting the parameters <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="9" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D703 TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>θ</mi></math></mjx-assistive-mml></mjx-container></span> of the NMT model define the agent’s <em>policy</em> which is now subject to optimization. The resulting loss function looks like this:</p>
+    <p><span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="10" style="font-size: 108.7%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msub><mjx-mi class="mjx-i" noic="true"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-munderover space="4" limits="false"><mjx-mo class="mjx-sop"><mjx-c class="mjx-c2211 TEX-S1"></mjx-c></mjx-mo><mjx-script style="vertical-align: -0.285em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-spacer style="margin-top: 0.291em;"></mjx-spacer><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-texatom></mjx-script></mjx-munderover><mjx-munder space="2" limits="false"><mjx-mo class="mjx-sop"><mjx-c class="mjx-c2211 TEX-S1"></mjx-c></mjx-mo><mjx-script style="vertical-align: -0.285em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2208"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44C TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-munder><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D45D TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-texatom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.056em; margin-bottom: -0.531em;"><mjx-mo class="mjx-n"><mjx-c class="mjx-c5E"></mjx-c></mjx-mo></mjx-over><mjx-base style="padding-left: 0.005em;"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c7C"></mjx-c></mjx-mo><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-texatom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.056em; margin-bottom: -0.531em;"><mjx-mo class="mjx-n"><mjx-c class="mjx-c5E"></mjx-c></mjx-mo></mjx-over><mjx-base style="padding-left: 0.005em;"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msup space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>L</mi><mrow><mi>R</mi><mi>L</mi></mrow></msub><mo>=</mo><munderover><mo data-mjx-texclass="OP">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><munder><mo data-mjx-texclass="OP">∑</mo><mrow><mi>y</mi><mo>∈</mo><mi>Y</mi></mrow></munder><mi>p</mi><mo stretchy="false">(</mo><mrow><mover><mi>y</mi><mo stretchy="false">^</mo></mover></mrow><mo data-mjx-texclass="ORD" fence="false" stretchy="false">|</mo><msup><mi>x</mi><mi>i</mi></msup><mo stretchy="false">)</mo><mi>R</mi><mo stretchy="false">(</mo><mrow><mover><mi>y</mi><mo stretchy="false">^</mo></mover></mrow><mo>,</mo><msup><mi>y</mi><mi>i</mi></msup><mo stretchy="false">)</mo></math></mjx-assistive-mml></mjx-container></span></p>
+    <p>Here <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="11" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-texatom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.056em; margin-bottom: -0.531em;"><mjx-mo class="mjx-n"><mjx-c class="mjx-c5E"></mjx-c></mjx-mo></mjx-over><mjx-base style="padding-left: 0.005em;"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-texatom></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover><mi>y</mi><mo stretchy="false">^</mo></mover></mrow></math></mjx-assistive-mml></mjx-container></span> is the generated sentence and <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="12" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44C TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Y</mi></math></mjx-assistive-mml></mjx-container></span> is the space of all possible translation sentences (every combination of words in the vocabulary of the language to translate to). <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="13" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-texatom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.056em; margin-bottom: -0.531em;"><mjx-mo class="mjx-n"><mjx-c class="mjx-c5E"></mjx-c></mjx-mo></mjx-over><mjx-base style="padding-left: 0.005em;"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msup space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>R</mi><mo stretchy="false">(</mo><mrow><mover><mi>y</mi><mo stretchy="false">^</mo></mover></mrow><mo>,</mo><msup><mi>y</mi><mi>i</mi></msup><mo stretchy="false">)</mo></math></mjx-assistive-mml></mjx-container></span> is the reward as described above. Because of the sheer size of <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="14" style="font-size: 108.7%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44C TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Y</mi></math></mjx-assistive-mml></mjx-container></span> it is impossible to exactly maximize <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="15" style="font-size: 108.7%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msub><mjx-mi class="mjx-i" noic="true"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>L</mi><mrow><mi>R</mi><mi>L</mi></mrow></msub></math></mjx-assistive-mml></mjx-container></span> and therefore it is approximated by <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="16" style="font-size: 108.7%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msub><mjx-texatom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.118em; margin-bottom: -0.531em;"><mjx-mo class="mjx-n"><mjx-c class="mjx-c5E"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-texatom><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mrow><mover><mi>L</mi><mo stretchy="false">^</mo></mover></mrow><mrow><mi>R</mi><mi>L</mi></mrow></msub></math></mjx-assistive-mml></mjx-container></span>. This approximation can be done in various ways, but in this paper they once again use the famous and well established REINFORCE algorithm.</p>
+    <center>
+    <img src="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/images/environment.png" width="700">
+    </center>
+    <p>(In my point of view, when incorporating the vector produced by the encoder into the environment one should limit the parameter optimization to the encoder component because the idea is for the agent to learn to take actions which are suited for the environment. If you use the reward feedback to optimize the encoder parameters, you are also learning to generate better environments, but maybe that’s okay…)</p>
+    <h3 id="limitations-of-rl">Limitations of RL</h3>
+    <p>So… we just use the BLEU score as the reward and voilà we bridged the gap between training objective and evaluation score. Well unfortunately it’s not that easy in practice.</p>
+    <p>The authors talk about “a few widely acknowledged limitations” (citing <span class="citation" data-cites="DBLP:journals/corr/abs-1709-06560">Henderson et al. (2017)</span>) of RL methods that one has to face when designing a RL system and mention two specifically:</p>
+    <ul>
+    <li>High variance of gradient estimation (citing <span class="citation" data-cites="10.5555/2074022.2074088">Weaver and Tao (2001)</span>, I am not sure about referring to a nearly 20 year old publication for current challenges)</li>
+    <li>Objective instability (citing <span class="citation" data-cites="DBLP:journals/corr/MnihKSGAWR13">Mnih et al. (2013)</span>, this is the famous Atari paper)</li>
+    </ul>
+    <p>Sadly this it is not described and explained in much detail by the authors and the cited work did not gave me clear answer either, but that is what I understood: The high variance in gradient estimation - especially in respect to the vanilla REINFORCE algorithm - mainly comes from relying on single samples to estimate the expectation. I am going to talk about what sampling means in the context NMT in a bit. Different techniques have been applied to remedy that drawback of REINFORCE. In this paper the authors do not make use of other algorithms which already incorporate certain improvements, but instead systematically examine different strategies for RL and their combinations in respect to REINFORCE.</p>
+    <h2 id="strategies-for-rl-wanna-see-a-cool-trick">Strategies for RL: Wanna see a cool trick?</h2>
+    <p>There some challenges when designing a RL system and there are some tricks or strategies to deal with them. Here is with what the authors experimented:</p>
+    <h3 id="reward-computation">Reward computation</h3>
+    <p><strong>Sampling <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="17" style="font-size: 108.7%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-texatom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.056em; margin-bottom: -0.531em;"><mjx-mo class="mjx-n"><mjx-c class="mjx-c5E"></mjx-c></mjx-mo></mjx-over><mjx-base style="padding-left: 0.005em;"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-texatom></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover><mi>y</mi><mo stretchy="false">^</mo></mover></mrow></math></mjx-assistive-mml></mjx-container></span></strong><br>
+    Earlier I talked about that the decoder part of the NMT model produces a sequence of words which is the translation generated by the model. But this is missing a last step. The model actually outputs a probability distribution over its vocabulary in every decoding step and not directly a word (or token). For MLE training this is irrelevant because we are looking at the probability to generate the reference sentence and do not have to compare it to an actual generated sentence. For RL training this is different because we need an actual sentence to evaluate to compare it to the reference and measure the BLEU.</p>
+    <center>
+    <img src="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/images/sampling.png" width="700">
+    </center>
+    <p>I do not know what current approaches to sampling in NMT are independently of RL training, but beam search seems very popular and quite effective <span class="citation" data-cites="freitag-al-onaizan-2017-beam">(Freitag and Al-Onaizan 2017)</span>. For the computation of BLEU rewards there are two established strategies:</p>
+    <ul>
+    <li>Beam search</li>
+    <li>Multinomial sampling</li>
+    </ul>
+    <p>The authors argue that these two strategies reflect the “exploration-exploitation dilemma”. With beam search being the one to better exploit the output of the NMT model, while multinomial sampling is said to explore more diverse candidates. I wont go into more detail about how these techniques work.</p>
+    <p><strong>Reward shaping</strong><br>
+    Inherently the reward defined through the BLEU score is terminal, i.e.&nbsp;it is only given at the end of each sentence. But to arrive at the end of a sentence the agent may have taken tens of actions as sentences can become quite long. How does the agent know at each step which word to choose if it only gets its cookie (or its… uh… its root canal treatment in the case of negative rewards) at the end?</p>
+    <p>This problem of delayed rewards is addressed by reward shaping.<a href="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/blogpost.html#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> The idea here is to generate an intermediate reward at each step by awarding an appropriate share of the terminal reward. So by giving the agent little pieces of the cookie it gets hints of how good the previous action was. The question remains how to pick the right size of cookie crumble.</p>
+    <p>For this work the authors use a form of reward shaping, which had been used for sequence prediction by <span class="citation" data-cites="DBLP:journals/corr/BahdanauBXGLPCB16">Bahdanau et al. (2016)</span>. Here the intermediate reward at step <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="18" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi></math></mjx-assistive-mml></mjx-container></span> is defined as <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="19" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msub><mjx-mi class="mjx-i" noic="true"><mjx-c class="mjx-c1D45F TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-msub><mjx-texatom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.056em; margin-bottom: -0.531em;"><mjx-mo class="mjx-n"><mjx-c class="mjx-c5E"></mjx-c></mjx-mo></mjx-over><mjx-base style="padding-left: 0.005em;"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-texatom><mjx-script style="vertical-align: -0.24em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-msub><mjx-texatom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.056em; margin-bottom: -0.531em;"><mjx-mo class="mjx-n"><mjx-c class="mjx-c5E"></mjx-c></mjx-mo></mjx-over><mjx-base style="padding-left: 0.005em;"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-texatom><mjx-script style="vertical-align: -0.24em;"><mjx-texatom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c2E"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msup space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-msub><mjx-texatom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.056em; margin-bottom: -0.531em;"><mjx-mo class="mjx-n"><mjx-c class="mjx-c5E"></mjx-c></mjx-mo></mjx-over><mjx-base style="padding-left: 0.005em;"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-texatom><mjx-script style="vertical-align: -0.24em;"><mjx-texatom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c2E"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msup space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>r</mi><mi>t</mi></msub><mo stretchy="false">(</mo><msub><mrow><mover><mi>y</mi><mo stretchy="false">^</mo></mover></mrow><mi>t</mi></msub><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo><mo>=</mo><mi>R</mi><mo stretchy="false">(</mo><msub><mrow><mover><mi>y</mi><mo stretchy="false">^</mo></mover></mrow><mrow><mn>1.</mn><mo>.</mo><mo>.</mo><mi>t</mi></mrow></msub><mo>,</mo><msup><mi>y</mi><mi>i</mi></msup><mo stretchy="false">)</mo><mo>−</mo><mi>R</mi><mo stretchy="false">(</mo><msub><mrow><mover><mi>y</mi><mo stretchy="false">^</mo></mover></mrow><mrow><mn>1.</mn><mo>.</mo><mo>.</mo><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msup><mi>y</mi><mi>i</mi></msup><mo stretchy="false">)</mo></math></mjx-assistive-mml></mjx-container></span>, where <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="20" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-msub><mjx-texatom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.056em; margin-bottom: -0.531em;"><mjx-mo class="mjx-n"><mjx-c class="mjx-c5E"></mjx-c></mjx-mo></mjx-over><mjx-base style="padding-left: 0.005em;"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-texatom><mjx-script style="vertical-align: -0.24em;"><mjx-texatom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c2E"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msup space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>R</mi><mo stretchy="false">(</mo><msub><mrow><mover><mi>y</mi><mo stretchy="false">^</mo></mover></mrow><mrow><mn>1.</mn><mo>.</mo><mo>.</mo><mi>t</mi></mrow></msub><mo>,</mo><msup><mi>y</mi><mi>i</mi></msup><mo stretchy="false">)</mo></math></mjx-assistive-mml></mjx-container></span> is the BLEU score of the first <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="21" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi></math></mjx-assistive-mml></mjx-container></span> generated words. So the intermediate reward is the gain in BLEU score achieved by adding that word. Makes sense to me.<br>
+    In their training they then used the cumulative immediate rewards to update the policy at each step, but I am gonna leave it at this now in regards to reward shaping.</p>
+    <p><strong>Baseline reward</strong><br>
+    This idea is directly related to reducing the variance of the gradient estimation. To reduce this variance a baseline reward is subtracted from the previously described reward. That can be the shaped reward or the terminal reward. Imagine getting on average about a cookie for everything you do. Then the interesting part is whether you sometimes only get half a cookie or maybe even two on special occasions. An action is thereby encouraged when it is rewarded higher than the baseline and discouraged when it is rewarded lower. Talking math that means:</p>
+    <p><span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="22" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mo class="mjx-n" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi class="mjx-i" noic="true"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44F TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D460 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D459 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mo>′</mo></msup><mo>=</mo><mi>R</mi><mo>−</mo><msub><mi>R</mi><mrow><mi>b</mi><mi>a</mi><mi>s</mi><mi>e</mi><mi>l</mi><mi>i</mi><mi>n</mi><mi>e</mi></mrow></msub></math></mjx-assistive-mml></mjx-container></span> , where <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="23" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>R</mi></math></mjx-assistive-mml></mjx-container></span> is either the shaped or terminal reward.<br>
+    So <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="24" style="font-size: 108.7%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mo class="mjx-n" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3E"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mo>′</mo></msup><mo>&gt;</mo><mn>0</mn></math></mjx-assistive-mml></mjx-container></span> for <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="25" style="font-size: 108.7%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3E"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noic="true"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44F TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D460 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D459 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>R</mi><mo>&gt;</mo><msub><mi>R</mi><mrow><mi>b</mi><mi>a</mi><mi>s</mi><mi>e</mi><mi>l</mi><mi>i</mi><mi>n</mi><mi>e</mi></mrow></msub></math></mjx-assistive-mml></mjx-container></span> and <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="26" style="font-size: 108.7%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mo class="mjx-n" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3C"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mo>′</mo></msup><mo>&lt;</mo><mn>0</mn></math></mjx-assistive-mml></mjx-container></span> for <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="27" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3C"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noic="true"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44F TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D460 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D459 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>R</mi><mo>&lt;</mo><msub><mi>R</mi><mrow><mi>b</mi><mi>a</mi><mi>s</mi><mi>e</mi><mi>l</mi><mi>i</mi><mi>n</mi><mi>e</mi></mrow></msub></math></mjx-assistive-mml></mjx-container></span>.</p>
+    <p>Well… how do we get that baseline reward? We somehow have to estimate an suitable average of the reward that is to be expected. They used a two-layer perceptron regressor with Relu activation units to estimate the baseline reward function. By pre-training the baseline function for 20k steps/mini-batches they gave it a head start and then jointly trained the NMT model (with RL) and the baseline function. Yeah… ok we somehow have to compute that baseline reward.</p>
+    <p><strong>Sum it up!</strong><br>
+    We have seen three different decisions that can be made in respect to reward design when using RL for NMT training. Obviously there is more, but that is what the authors are looking at:</p>
+    <ul>
+    <li>Sampling: beam search or multinomial</li>
+    <li>Reward shaping: yes or no</li>
+    <li>Baseline reward: yes or no</li>
+    </ul>
+    <p>So that’s it with the rewards for now and we are going to have a look at another strategy for using RL with NMT.</p>
+    <h3 id="combining-objectives">Combining objectives</h3>
+    <p>Remember the training objectives <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="28" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msub><mjx-mi class="mjx-i" noic="true"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D440 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D438 TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>L</mi><mrow><mi>M</mi><mi>L</mi><mi>E</mi></mrow></msub></math></mjx-assistive-mml></mjx-container></span> and <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="29" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msub><mjx-texatom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.118em; margin-bottom: -0.531em;"><mjx-mo class="mjx-n"><mjx-c class="mjx-c5E"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-texatom><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mrow><mover><mi>L</mi><mo stretchy="false">^</mo></mover></mrow><mrow><mi>R</mi><mi>L</mi></mrow></msub></math></mjx-assistive-mml></mjx-container></span> from earlier? The next cool trick is to to combine these objectives somehow to stabilize the objective (which was the other claimed limitation of RL, in case you forgot).<br>
+    This can be done either sequentially or simultaneously. The sequential approach can be realized e.g.&nbsp;by first training the model in classical supervised fashion and then fine-tune it with reinforcement learning or by alternating the objective per training batch. Simultaneously incorporating the two objectives can be done by simple linear interpolation <span class="citation" data-cites="kreutzer:rlnmt:18">(Kreutzer 2018)</span>. And this is exactly what has been done in this paper:</p>
+    <p><span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="30" style="font-size: 108.7%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msub><mjx-mi class="mjx-i" noic="true"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D450 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45C TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44F TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D451 TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2217"></mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi class="mjx-i" noic="true"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D440 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D438 TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2217"></mjx-c></mjx-mo><mjx-msub space="3"><mjx-texatom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.118em; margin-bottom: -0.531em;"><mjx-mo class="mjx-n"><mjx-c class="mjx-c5E"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-texatom><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43F TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>L</mi><mrow><mi>c</mi><mi>o</mi><mi>m</mi><mi>b</mi><mi>i</mi><mi>n</mi><mi>e</mi><mi>d</mi></mrow></msub><mo>=</mo><mi>α</mi><mo>∗</mo><msub><mi>L</mi><mrow><mi>M</mi><mi>L</mi><mi>E</mi></mrow></msub><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo><mo>∗</mo><msub><mrow><mover><mi>L</mi><mo stretchy="false">^</mo></mover></mrow><mrow><mi>R</mi><mi>L</mi></mrow></msub></math></mjx-assistive-mml></mjx-container></span></p>
+    <p>The question open to investigation now is how to choose that alpha for best results.</p>
+    <h3 id="monolingual-data">Monolingual data</h3>
+    <p>The last strategy for improving the translation quality of NMT models is the use of monolingual date (i.e.&nbsp;not parallel data). This actually has nothing to do with RL in particular, but since it never had been done in combination with RL training, the authors decided that it is worth a shot. So how is monolingual data thought to yield improvement for the translation task?</p>
+    <p>First of all, let us quickly define two terms: target-side monolingual data means data in the language to which translate to and source-side monolingual data means data in the language from which to translate. Ok.</p>
+    <p><span class="citation" data-cites="sennrich2015improving">Sennrich, Haddow, and Birch (2015)</span> report substantial improvements with the use of target-side monolingual data and argue that it “plays an important role in boosting fluency”. And that makes sense to me as the model is able to learn more about the statistical properties of the target language, essentially building a better language model. The key novelty in the work of <span class="citation" data-cites="sennrich2015improving">Sennrich, Haddow, and Birch (2015)</span> is that they did not train a separate language model but incorporated the monolingual data into the NMT model training itself.</p>
+    <p>So again the question is: How do we do that? Actually we make parallel data out of our monolingual data. Luckily we have a NMT model which can translate sentences…<br>
+    For target-side monolingual data the authors follow the approach of <span class="citation" data-cites="sennrich2015improving">Sennrich, Haddow, and Birch (2015)</span> by training a reverse NMT model with parallel data and than back-translate the monolingual data to get the respective source-side sentence. And for source-side monolingual data it is even simpler: They just predict a pseudo-reference by doing a forward pass with the NMT model and use beam search to sample from the models output (note the use of beam search here and not multinomial sampling).</p>
+    <p>For me that seemed kind of fishy to train the model with data that was more or less generated by itself, but it seems to be an established method. I think it is important to note that the goal here is not primarily to improve the matching between the two languages but to improve the modeling of the languages itself.</p>
+    <h2 id="experiments-and-results-showing-us-what-they-got">Experiments and Results: Showing us what they got</h2>
+    <p>A fairly systematic empirical study of applying these different strategies has been conducted in this work. If you would actually try to evaluate every combination of the design decisions mentioned above, the number of experiments to run would explode. Take alone the three decisions in reward computation (2^3), then assume 5 different values for alpha (2^3 * 5) and maybe with source-side monolingual data, with target-side monolingual data and with both (2^3 * 5 * 3). There you go: Have fun with running and evaluating 120 different experiments. And that’s only one evaluation task. So one has to be clever about this. The authors came up with the following:</p>
+    <h3 id="general-setting">General setting</h3>
+    <p><strong>The tasks</strong><br>
+    For evaluation three different standard translations tasks were used, that are provided by the “Conference of Machine Translation” (WMT):</p>
+    <ul>
+    <li>WMT14 English-German (En-De, one of the very popular ones it seems when you look at all the publications using it)</li>
+    <li>WMT17 English-Chinese (En-Zh)</li>
+    <li>WMT17 Chinese-English (Zh-En)</li>
+    </ul>
+    <p>The last two tasks unsurprisingly use the same dataset and the Chinese background of the authors might explain their particular interest in using it.</p>
+    <p>Only the RL training strategies have been evaluated on all three tasks, while all the experiments in regard to leveraging monolingual data have only been evaluated on the last one. Therefore I will examine the dataset for the last (two) task a little bit more (but the other dataset is of similar structure).</p>
+    <p><strong>The data</strong><br>
+    It contains about 24M sentence pairs from the news domain and the <em>UN Parallel Corpus</em>. The latter is a corpus of translated sentences from publicly available United Nations documents, so I am assuming something like press-releases i.e.&nbsp;also news-like documents. As dev and test set there are two sets given which were created by sampling English online newspaper and professionally translating them. For the monolingual data they used the <em>LDC Chinese Gigaword (4th edition)</em> and the <em>News Crawl 2016</em> datasets for Chinese and English respectively which both are news corpora. After filtering this resulted in 4M Chinese and 7M English sentences. All these datasets are available on the <a href="https://www.statmt.org/wmt17/translation-task.html">WMT17 website</a>, albeit not necessarily under public access.</p>
+    <p><strong>The model</strong><br>
+    <em>TRANSFORMER FTW!!!1!11</em> or more delicately put: as NMT model they adopt the famous Transformer model presented by <span class="citation" data-cites="46201">Vaswani et al. (2017)</span>. For English-Chinese (and vice-versa) they used the <em>transformer_big</em> setting and the <em>transformer_base_v1</em> setting for English-German. Nearly the same configurations as in the original paper were used and the MLE training was also done in a pretty standard way using <em>Adam</em> as optimizer.</p>
+    <h3 id="experimental-sequence">Experimental sequence</h3>
+    <p><strong><em>Testing different RL strategies</em></strong><br>
+    Like I said before, they different “tricks” or strategies for RL were tested on all three tasks. After running one type of experiment, the strategy which yielded the best results was then used in future experiments. In that way the amount of experimental setups remains reasonable. (Still amounting to 25 in total, because they tested a lot of different setups for using monolingual data, but more on that later.)</p>
+    <p>Each experimental setup is conducted at least 5 times and if I understood it correctly the the reported result is the averaged performance of these runs on the test set. The configurations for these evaluations on the test set for each run is the configuration which achieved the best result on the validation sets. So far so good.</p>
+    <p>First they examine which <strong><em>sampling technique</em></strong> to use and whether to use <strong><em>reward shaping</em></strong> or not:</p>
+    <center>
+    <img src="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/images/res_rew-samp_rew_shap.png" width="500"><br>
+    <em>Table taken from <span class="citation" data-cites="wu-etal-2018-study">Wu et al. (2018)</span></em>
+    </center>
+    <p>I think the table is pretty self-explanatory. MLE refers to the performance of the pre-trained model. The reward is either the terminal reward or the shaped reward and the sampling method is either beam search or multinomial sampling.<br>
+    The authors state their surprise about the fact that multinomial sampling performs better than beam search and conclude the importance of exploration for reward computing. Apart of that they report that using reward shaping makes “no big difference” but performs marginally better and decide to use multinomial sampling and reward shaping in the following experiments.</p>
+    <p>Second they examine whether to incorporate a <strong><em>baseline reward</em></strong> into the reward computation or not:</p>
+    <center>
+    <img src="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/images/res_rew-base.png" width="500"><br>
+    <em>Table taken from <span class="citation" data-cites="wu-etal-2018-study">Wu et al. (2018)</span></em>
+    </center>
+    <p>Again I think the table explains itself. Here they observe that subtracting a baseline reward does not improve the results, which contradicts future results by <span class="citation" data-cites="ranzato2015sequence">Ranzato et al. (2015)</span>. Therefore they decide to not incorporate the baseline reward by taking the “economic perspective”. (read: it’s just not worth it)</p>
+    <p>Lastly for this chapter, they examine different weights for the linear <strong><em>combination of the training objectives</em></strong>:</p>
+    <center>
+    <img src="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/images/res_obj-comb.png" width="700"><br>
+    <em>Figure taken from <span class="citation" data-cites="wu-etal-2018-study">Wu et al. (2018)</span></em>
+    </center>
+    <p>Pretty straight forward again. The best results for all tasks were achieved with <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="31" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c33"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>α</mi><mo>=</mo><mn>0.3</mn></math></mjx-assistive-mml></mjx-container></span> and therefore the authors conclude that the combination of the two objectives indeed helps stabilizing the training. Alpha is set accordingly in the following experiments.</p>
+    <p><strong>Sum it up!</strong><br>
+    Looking at the findings we got so far this can be condensed to:</p>
+    <ul>
+    <li>Sampling: multinomial</li>
+    <li>Reward shaping: don’t care (yes )</li>
+    <li>Baseline reward: don’t care (no)</li>
+    <li>Linear objective combining: <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="32" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c33"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>α</mi><mo>=</mo><mn>0.3</mn></math></mjx-assistive-mml></mjx-container></span></li>
+    </ul>
+    <p><strong>Using monolingual data</strong><br>
+    As I mentioned before a great number of different experimental setups regarding the training with monolingual data are conducted in this work. They try a lot of possible combinations of training method (MLE or RL) and usage of monolingual data (source-side, traget side and both). Although this evaluation makes up a whole page of the paper I don’t find it to be of that great importance for this review as training with monolingual data is not inherently related to reinforcement learning. And in the end they achieved the best results by using all of the data for both objectives…</p>
+    <p>I will just show you the last result table where they also compared different versions of their model with existing work:</p>
+    <center>
+    <img src="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/images/res_final.png" width="900"><br>
+    <em>Table taken from <span class="citation" data-cites="wu-etal-2018-study">Wu et al. (2018)</span></em>
+    </center>
+    <p>The score of <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="33" style="font-size: 108.7%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c35"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c34"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>25.04</mn></math></mjx-assistive-mml></mjx-container></span> observed for <em>Transformer + RL</em> is the score that you can see in the bar chart above for the respective task (Zh-En, right bar) with <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="34" style="font-size: 108.7%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c33"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>α</mi><mo>=</mo><mn>0.3</mn></math></mjx-assistive-mml></mjx-container></span>. When there is no <em>+ RL</em> at the end that means that only MLE training was used in this case.</p>
+    <p><strong>It comes to an end.</strong><br>
+    The evaluation is concluded by stating that “the results clearly show that after combing both source-side and target-side monolingual data with RL training, we obtain the state-of-the-art BLEU score <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="35" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c36"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c37"></mjx-c><mjx-c class="mjx-c33"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>26.73</mn></math></mjx-assistive-mml></mjx-container></span>, even surpassing the best ensemble model in WMT17 Zh-En translation challenge”.</p>
+    <p>In total the findings amounts to the following: Multinomial sampling is better than beam search, reward shaping and reward baselines do not make much of a difference and a linear combination of MLE and RL objective is effective for a suitable weighting parameter choice. And monolingual data is best leveraged by using source-side and target-side data for MLE and RL training. (read: give me all the data every time please).</p>
+    <h2 id="so-what">So what?</h2>
+    <h3 id="my-opinion">My opinion</h3>
+    <p>At first I was very exited about this paper because NMT is such a relevant taks in NLP, probably the one which as the most direct application in day-to-day use for most people. And seeing how RL can be applied to something you would not immediately think of is always nice. Unfortunately I am not very convinced that it makes very much sense to do so in the way presented in the paper at hand, but let me name a few positive aspects first:</p>
+    <ul>
+    <li>The empirical study is very well structured and gives a nice impression on how one can combine and examine different techniques and strategies that have been proposed in previous work.</li>
+    <li>All of the code and configurations that were used for the experiments are <a href="https://github.com/apeterswu/RL4NMT">publicly available on GitHub</a> so it should be relatively easy to comprehend and reproduce them.</li>
+    <li>I did not know about the presented strategies for RL training so learning about them and how they were applied in the NMT setting was very interesting.</li>
+    </ul>
+    <p>Now for the not so nice parts:</p>
+    <ul>
+    <li>There was no real assessment of the scope of the validity of the presented findings. I can not really judge if the findings hold outside of this specific task with these specific preconditions (e.g.&nbsp;base model and previously made strategy decisions). But at least for using baseline rewards there is contradicting highly cited work<a href="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/blogpost.html#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> <span class="citation" data-cites="ranzato2015sequence">Ranzato et al. (2015)</span></li>
+    <li>I did not like that a major part of the paper was about how to use monolingual data for training the model, because that has been done before and has nothing to do with RL in particular. Although admittedly this is the first work to combine it with RL.</li>
+    <li>Improvements of the result were always reported by additional RL training on top of MLE training. I am bit suspicious here because that means that the model was trained even more on the same data. As all of the data is from the news domain, that could mean that the model was fitted even more to that domain and therefore performing better in the evaluation task but not in a real-world scenario.</li>
+    <li>The reason to use RL for NMT in the first place was to bridge the loss-evaluation mismatch by defining a training objective that is directly related to the BLEU score. But considering the mentioned critic of BLEU it is questionable to me whether that goal is really so meaningful.</li>
+    </ul>
+    <p>And another note, which is not really substantial criticism but kind of funny:<br>
+    In the final sentence of the evaluation the authors state that they “obtain the state-of-the-art BLEU score <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="36" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c36"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c37"></mjx-c><mjx-c class="mjx-c33"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>26.73</mn></math></mjx-assistive-mml></mjx-container></span>, even surpassing the best ensemble model in WMT17 Zh-En translation challenge”. While this is true regarding to the challenge which took place in 2017, it was not state-of-the-art at the time this paper was submitted to arXiv. A few month earlier another paper was submitted, which reported higher scores than in the paper at hand ( <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="37" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c37"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c33"></mjx-c><mjx-c class="mjx-c38"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>27.38</mn></math></mjx-assistive-mml></mjx-container></span> for single-model and <span class="math inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" role="presentation" tabindex="0" ctxtmenu_counter="38" style="font-size: 108.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c38"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c34"></mjx-c><mjx-c class="mjx-c36"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>28.46</mn></math></mjx-assistive-mml></mjx-container></span> as ensebmle), see <span class="citation" data-cites="DBLP:journals/corr/abs-1803-05567">Hassan et al. (2018)</span>. Normally I would not be that picky, but <a href="https://scholar.google.com/citations?user=RD5kSG0AAAAJ&amp;hl=en">Lijun Wu</a> (the primary author of this paper) is also listed as co-author of the other paper, so he should have known about that ;)</p>
+    <h3 id="ideas-for-future-research">Ideas for future research</h3>
+    <p>The ideas I have for future research will be reflected in the discussion topics so I am phrasing them as questions here directly:</p>
+    <ul>
+    <li>How can RL be applied to NMT without using supervised (parallel) data to simulate the rewards? What other rewards could be used? (e.g.&nbsp;using real feedback by humans)</li>
+    <li>Do you know other “tricks” for RL training that could be useful in the context of NMT? Or maybe even other RL methods than REINFORCE? (e.g.&nbsp;Actor-Critic)</li>
+    <li>What could be different ways to address the loss-evaluation mismatch? And is there a different application for RL in NMT?</li>
+    </ul>
+    <p>If you made it this far I would like to let you know that there is another blog-post dissecting the use of RL in NMT with reference to the paper I reviewed here. Only the other one is written by someone how is probably getting a six-figure salary as research scientist at <em>Google Translate</em> and not six credit point as master student at <em>University of Potsdam</em> (no offense :P). Unsurprisingly this is also reflected in the depth of the analysis at some points, so go check <a href="https://www.cl.uni-heidelberg.de/statnlpgroup/blog/rl4nmt/#nmt-as-an-rl-problem">it</a> <span class="citation" data-cites="kreutzer:rlnmt:18">(Kreutzer 2018)</span> out if you still have not heard enough!</p>
+    <h2 id="references">References</h2>
+    <ul>
+    <li><a href="http://nlpprogress.com/english/machine_translation.html">http://nlpprogress.com/english/machine_translation.html</a></li>
+    <li><a href="https://medium.com/syncedreview/history-and-frontier-of-the-neural-machine-translation-dc981d25422d">https://medium.com/syncedreview/history-and-frontier-of-the-neural-machine-translation-dc981d25422d</a></li>
+    </ul>
+    <hr>
+    <div id="refs" class="references hanging-indent" role="doc-bibliography">
+    <div id="ref-DBLP:journals/corr/BahdanauBXGLPCB16">
+    <p>Bahdanau, Dzmitry, Philemon Brakel, Kelvin Xu, Anirudh Goyal, Ryan Lowe, Joelle Pineau, Aaron C. Courville, and Yoshua Bengio. 2016. “An Actor-Critic Algorithm for Sequence Prediction.” <em>CoRR</em> abs/1607.07086. <a href="http://arxiv.org/abs/1607.07086">http://arxiv.org/abs/1607.07086</a>.</p>
+    </div>
+    <div id="ref-freitag-al-onaizan-2017-beam">
+    <p>Freitag, Markus, and Yaser Al-Onaizan. 2017. “Beam Search Strategies for Neural Machine Translation.” In <em>Proceedings of the First Workshop on Neural Machine Translation</em>, 56–60. Vancouver: Association for Computational Linguistics. <a href="https://doi.org/10.18653/v1/W17-3207">https://doi.org/10.18653/v1/W17-3207</a>.</p>
+    </div>
+    <div id="ref-DBLP:journals/corr/abs-1803-05567">
+    <p>Hassan, Hany, Anthony Aue, Chang Chen, Vishal Chowdhary, Jonathan Clark, Christian Federmann, Xuedong Huang, et al. 2018. “Achieving Human Parity on Automatic Chinese to English News Translation.” <em>CoRR</em> abs/1803.05567. <a href="http://arxiv.org/abs/1803.05567">http://arxiv.org/abs/1803.05567</a>.</p>
+    </div>
+    <div id="ref-DBLP:journals/corr/abs-1709-06560">
+    <p>Henderson, Peter, Riashat Islam, Philip Bachman, Joelle Pineau, Doina Precup, and David Meger. 2017. “Deep Reinforcement Learning That Matters.” <em>CoRR</em> abs/1709.06560. <a href="http://arxiv.org/abs/1709.06560">http://arxiv.org/abs/1709.06560</a>.</p>
+    </div>
+    <div id="ref-kreutzer:rlnmt:18">
+    <p>Kreutzer, Julia. 2018. “RL in Nmt: The Good, the Bad and the Ugly.” Blog. <em>StatNLP HD Blog</em>. <a href="http://www.cl.uni-heidelberg.de/statnlpgroup/blog/rl4nmt/">http://www.cl.uni-heidelberg.de/statnlpgroup/blog/rl4nmt/</a>.</p>
+    </div>
+    <div id="ref-DBLP:journals/corr/MnihKSGAWR13">
+    <p>Mnih, Volodymyr, Koray Kavukcuoglu, David Silver, Alex Graves, Ioannis Antonoglou, Daan Wierstra, and Martin A. Riedmiller. 2013. “Playing Atari with Deep Reinforcement Learning.” <em>CoRR</em> abs/1312.5602. <a href="http://arxiv.org/abs/1312.5602">http://arxiv.org/abs/1312.5602</a>.</p>
+    </div>
+    <div id="ref-ranzato2015sequence">
+    <p>Ranzato, Marc’Aurelio, Sumit Chopra, Michael Auli, and Wojciech Zaremba. 2015. “Sequence Level Training with Recurrent Neural Networks.” <em>arXiv Preprint arXiv:1511.06732</em>.</p>
+    </div>
+    <div id="ref-sennrich2015improving">
+    <p>Sennrich, Rico, Barry Haddow, and Alexandra Birch. 2015. “Improving Neural Machine Translation Models with Monolingual Data.” <a href="http://arxiv.org/abs/1511.06709">http://arxiv.org/abs/1511.06709</a>.</p>
+    </div>
+    <div id="ref-46201">
+    <p>Vaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. “Attention Is All You Need.” In. <a href="https://arxiv.org/pdf/1706.03762.pdf">https://arxiv.org/pdf/1706.03762.pdf</a>.</p>
+    </div>
+    <div id="ref-10.5555/2074022.2074088">
+    <p>Weaver, Lex, and Nigel Tao. 2001. “The Optimal Reward Baseline for Gradient-Based Reinforcement Learning.” In <em>Proceedings of the Seventeenth Conference on Uncertainty in Artificial Intelligence</em>, 538–45. UAI’01. San Francisco, CA, USA: Morgan Kaufmann Publishers Inc.</p>
+    </div>
+    <div id="ref-wu-etal-2018-study">
+    <p>Wu, Lijun, Fei Tian, Tao Qin, Jianhuang Lai, and Tie-Yan Liu. 2018. “A Study of Reinforcement Learning for Neural Machine Translation.” In <em>Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing</em>, 3612–21. Brussels, Belgium: Association for Computational Linguistics. <a href="https://doi.org/10.18653/v1/D18-1397">https://doi.org/10.18653/v1/D18-1397</a>.</p>
+    </div>
+    </div>
+    <section class="footnotes" role="doc-endnotes">
+    <hr>
+    <ol>
+    <li id="fn1" role="doc-endnote"><p><a href="https://www.blog.google/products/translate/found-translation-more-accurate-fluent-sentences-google-translate/">https://www.blog.google/products/translate/found-translation-more-accurate-fluent-sentences-google-translate/</a><a href="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/blogpost.html#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+    <li id="fn2" role="doc-endnote"><p><a href="https://www.microsoft.com/en-us/translator/blog/2016/11/15/microsoft-translator-launching-neural-network-based-translations-for-all-its-speech-languages/">https://www.microsoft.com/en-us/translator/blog/2016/11/15/microsoft-translator-launching-neural-network-based-translations-for-all-its-speech-languages/</a><a href="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/blogpost.html#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+    <li id="fn3" role="doc-endnote"><p><a href="https://paperswithcode.com/sota/machine-translation-on-wmt2014-english-german">https://paperswithcode.com/sota/machine-translation-on-wmt2014-english-german</a><a href="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/blogpost.html#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+    <li id="fn4" role="doc-endnote"><p><a href="https://paperswithcode.com/sota/unsupervised-machine-translation-on-wmt2014-1">https://paperswithcode.com/sota/unsupervised-machine-translation-on-wmt2014-1</a><a href="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/blogpost.html#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+    <li id="fn5" role="doc-endnote"><p><a href="https://ehudreiter.com/2020/03/02/why-use-18-year-old-bleu/">Why do we still use 18-year old BLEU?</a><a href="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/blogpost.html#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+    <li id="fn6" role="doc-endnote"><p><a href="https://towardsdatascience.com/evaluating-text-output-in-nlp-bleu-at-your-own-risk-e8609665a213">Evaluating Text Output in NLP: BLEU at your own risk</a><a href="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/blogpost.html#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+    <li id="fn7" role="doc-endnote"><p><a href="https://moodle2.uni-potsdam.de/pluginfile.php/1362629/mod_resource/content/2/johann_seltmann.pdf">More flexible sentence generation</a><a href="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/blogpost.html#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+    <li id="fn8" role="doc-endnote"><p>Click <a href="https://www.youtube.com/watch?v=xManAGjbx2k">here</a> to see a video which explains the idea of reward shaping with dolphins jumping through burning hoops.<a href="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/blogpost.html#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+    <li id="fn9" role="doc-endnote"><p><a href="https://scholar.google.com/citations?user=NbXF7T8AAAAJ&amp;hl=en">The authors Google Scholar page</a> lists 741 citations<a href="file:///private/var/folders/ss/z8sdswyx0pqffkn8rdmz_bkr0000gn/T/blogpost.html#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+    </ol>
+    </section>
+  </article>
+
+
+</body></html>
