@@ -1,3 +1,5 @@
+**I strongly recommend reading the [html version](https://wuxmax.github.io/rl4nmt-review/blogpost.html) for viewing pleasures!**
+
 # Reinforcement Learning for Neural Machine Translation
 A blog-post by Max Reinhard, 16th June 2020. Based on @wu-etal-2018-study
 
